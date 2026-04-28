@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>丹纳赫设备查询系统</title>
+    <title>设备查询系统</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -58,7 +58,7 @@
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fa fa-search text-xl"></i>
-                <h1 class="text-lg font-bold">丹纳赫设备查询</h1>
+                <h1 class="text-lg font-bold">设备查询</h1>
             </div>
             <div class="text-sm opacity-90">共<span id="total-count" class="font-semibold">0</span>条记录</div>
         </div>
@@ -195,7 +195,7 @@
     <!-- 页脚 -->
     <footer class="bg-danaher-900 text-white py-4 mt-8">
         <div class="container mx-auto px-4 text-center text-sm opacity-80">
-            <p>© 2026 丹纳赫集团 (Danaher Corporation) 版权所有</p>
+            <p>© 2026  renming</p>
             <p class="mt-1">设备管理系统 - 移动查询端</p>
         </div>
     </footer>
@@ -388,7 +388,7 @@
             // 生成文件名（包含查询时间）
             const now = new Date();
             const timestamp = `${now.getFullYear()}${(now.getMonth()+1).toString().padStart(2,'0')}${now.getDate().toString().padStart(2,'0')}_${now.getHours().toString().padStart(2,'0')}${now.getMinutes().toString().padStart(2,'0')}`;
-            const fileName = `丹纳赫设备查询结果_${timestamp}.xlsx`;
+            const fileName = `设备查询结果_${timestamp}.xlsx`;
             
             // 导出Excel文件
             XLSX.writeFile(wb, fileName);
